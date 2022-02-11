@@ -1,0 +1,8 @@
+id,fname,lname,salary,bdate,email,dep,phone1,phone2,image
+9,Ismo,Insinööri,2600,1957-06-05,ismo.insinoori@firma.fi,4,34534054,NULL,images/employees/m6.png
+10,Peke,Pomo,3250,1990-10-01,peke.pomo@hotmail.com,5,65545054,NULL,images/employees/m7.png
+11,Taavi,Tanakka,2000,1985-03-03,taavi.tanakka@firma.fi,5,35345054,NULL,images/employees/m8.png
+12,Maija,Mainio,2200,1975-07-06,maija.mainio@hotmail.com,5,12564654,NULL,images/employees/f4.png
+13,Mikko,Meikäläinen,2250,1986-03-21,mikko.meikalainen@firma.fi,5,12523654,NULL,images/employees/m9.png
+14,Satu,Särmä,2300,1983-03-02,satu.sarma@gmail.com,5,12235054,NULL,images/employees/f5.png
+16,Heikki,Häijy,2700,1970-01-21,heikki.haijy@firma.fi,5,12465054,12236054,images/employees/m10.png
