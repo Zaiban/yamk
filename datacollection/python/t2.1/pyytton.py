@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Python tehtävä 1.2
+# Python tehtävä 2.1
 # Esa Parkkila
 
 import os
