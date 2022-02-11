@@ -1,0 +1,9 @@
+id,fname,lname,salary,bdate,email,dep,phone1,phone2,image
+1,Iso,Pomo,10000,1960-01-29,iso.pomo@firma.fi,1,12545054,65665661,images/employees/m1.png
+2,Make,Myyjä,2500,1966-06-16,make.myyja@gmail.com,2,34534524,65465464,images/employees/m2.png
+3,Maiju,Myyjä,2500,1970-04-15,maiju.myyja@hotmail.com,2,32232353,56546243,images/employees/f1.png
+4,Mike,Markkinoija,3000,1980-06-19,mike.markkinoija@firma.fi,3,76565574,65435334,images/employees/m3.png
+5,Masa,Markkina,3000,1977-04-13,masa.markkina@gmail.com,3,52545054,NULL,images/employees/m4.png
+6,Tiina,Tuote,2500,1965-05-25,tiina.tuote@hotmail.com,4,46545054,NULL,images/employees/f2.png
+7,Taisto,Tähdellinen,2800,1955-11-11,taisto.tahdellinen@firma.fi,4,57545054,NULL,images/employees/m5.png
+8,Jaana,Jämäkkä,3250,1979-06-01,jaana.jamakka@gmail.com,4,43545054,NULL,images/employees/f3.png
