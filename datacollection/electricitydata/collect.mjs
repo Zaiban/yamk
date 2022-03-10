@@ -1,9 +1,15 @@
-import * as elasticsearch from "elasticsearch";
+import * as elasticsearch from "@elastic/elasticsearch";
+import * as dotenv from "dotenv"
 
-const ES_HOST = process.env.ES_HOST;
+const vars = dotenv.config()
+console.log('vars', vars)
+
+const { ES_HOST } = vars.parsed;
+
+console.log(`ES_HOST: ${ES_HOST}`);
 
 const esClient = new elasticsearch.Client({
-  host: ES_HOST,
+  node: ES_HOST,
   log: "error",
 });
 
@@ -18,3 +24,5 @@ const getSensorData = async () => {
     return null;
   }
 };
+
+getSensorData();
