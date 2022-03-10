@@ -1,2 +1,4 @@
 results/
 *conflicted*
+.env
+node_modules/
