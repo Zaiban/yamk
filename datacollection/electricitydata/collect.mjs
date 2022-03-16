@@ -1,6 +1,7 @@
 import { differenceInSeconds } from "date-fns";
 import * as elasticsearch from "@elastic/elasticsearch";
 import * as dotenv from "dotenv";
+import * as csv from "csv-writer";
 
 const vars = dotenv.config();
 console.log("vars", vars);
@@ -9,6 +10,11 @@ const { ES_HOST, DEV_EUI } = vars.parsed;
 
 const beginTime = "2019-02-19T00:00:00";
 const endTime = "2019-03-19T23:59:59";
+
+//const beginTime = "2019-01-19T00:00:00";
+//const endTime = "2019-02-19T23:59:59";
+
+const createCsvWriter = csv.createObjectCsvWriter;
 
 console.log(`ES_HOST: ${ES_HOST}`);
 
@@ -48,6 +54,13 @@ const getSensorData = async () => {
   for (const devEUI of devEUIds) {
     const DATAFIELD_KEY = `Dev_${devEUI}`;
     console.log("Looping: ", DATAFIELD_KEY);
+    const csvWriter = createCsvWriter({
+      path: `${DATAFIELD_KEY}_out.csv`,
+      header: [
+        { id: "time", title: "Time" },
+        { id: "power", title: "Power" },
+      ],
+    });
 
     const response = await esClient.search({
       index: "logstash*",
@@ -107,7 +120,8 @@ const getSensorData = async () => {
         } else if (pulse1) {
           power = pulseToPower(pulse1);
         }
-        console.log("power", power);
+        //console.log("time", time);
+        //console.log("power", power);
 
         return {
           time,
@@ -119,10 +133,11 @@ const getSensorData = async () => {
       })
       .filter((item) => typeof item !== "undefined");
 
-    //console.log("data", data);
+    console.log("data", data);
     console.log("first", data[0]?.time);
     console.log("last", data[data.length - 1]?.time);
     console.log("size:", hits.length);
+    await csvWriter.writeRecords(data);
   }
 };
 
