@@ -1,0 +1,16 @@
+Id,Etunimi,Sukunimi,Palkka,Syntymäaika,Sähköposti,Työpuhelin,Kotipuhelin,Kuva,Osasto,Osaston tulos,Ikä
+1,Iso,Pomo,10000,1960-01-01,iso.pomo@firma.fi,12545054,65665661,images/employees/m1.png,Johtoporras,78400,62
+2,Make,Myyjä,2500,1966-06-16,make.myyja@gmail.com,34534524,65465464,images/employees/m2.png,Myynti,1260500,55
+3,Maiju,Myyjä,2500,1970-04-15,maiju.myyja@hotmail.com,32232353,56546243,images/employees/f1.png,Myynti,1260500,51
+4,Mike,Markkinoija,3000,1980-06-19,mike.markkinoija@firma.fi,76565574,65435334,images/employees/m3.png,Markkinointi,673200,41
+5,Masa,Markkina,3000,1977-04-13,masa.markkina@gmail.com,52545054,-,images/employees/m4.png,Markkinointi,673200,44
+6,Tiina,Tuote,2500,1965-05-25,tiina.tuote@hotmail.com,46545054,-,images/employees/f2.png,Tuotekehitys,12500,56
+7,Taisto,Tähdellinen,2800,1955-11-11,taisto.tahdellinen@firma.fi,57545054,-,images/employees/m5.png,Tuotekehitys,12500,66
+8,Jaana,Jämäkkä,3250,1979-06-01,jaana.jamakka@gmail.com,43545054,-,images/employees/f3.png,Tuotekehitys,12500,42
+9,Ismo,Insinööri,2600,1957-06-05,ismo.insinoori@firma.fi,34534054,-,images/employees/m6.png,Tuotekehitys,12500,64
+10,Peke,Pomo,3250,1990-10-01,peke.pomo@hotmail.com,65545054,-,images/employees/m7.png,Tuotanto,115400,31
+11,Taavi,Tanakka,2000,1985-03-03,taavi.tanakka@firma.fi,35345054,-,images/employees/m8.png,Tuotanto,115400,36
+12,Maija,Mainio,2200,1975-07-06,maija.mainio@hotmail.com,12564654,-,images/employees/f4.png,Tuotanto,115400,46
+13,Mikko,Meikäläinen,2250,1986-03-21,mikko.meikalainen@firma.fi,12523654,-,images/employees/m9.png,Tuotanto,115400,35
+14,Satu,Särmä,2300,1983-03-02,satu.sarma@gmail.com,12235054,-,images/employees/f5.png,Tuotanto,115400,38
+15,Heikki,Häijy,2700,1970-01-21,heikki.haijy@firma.fi,12465054,12236054,images/employees/m10.png,Tuotanto,115400,52
