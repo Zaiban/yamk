@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+print("Hey")
+
 # Read data from file to dataframe
 df = pd.read_csv('emp-dep-python.csv')
 
