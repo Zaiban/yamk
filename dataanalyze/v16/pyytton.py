@@ -11,18 +11,19 @@ df = pd.read_csv('salary.csv')
 print('df', df)
 
 #sns.heatmap(df.corr(), annot=True)
-#plt.show()
+# plt.show()
 
 # Divide data to two parts, train and test
-x_train, x_test, y_train, y_test = train_test_split(df['YearsExperience'], df['Salary'], test_size=0.2)
- 
- # Data formats must be reshaped, because model training expects more than one column by default
+x_train, x_test, y_train, y_test = train_test_split(
+    df['YearsExperience'], df['Salary'], test_size=0.2)
+
+# Data formats must be reshaped, because model training expects more than one column by default
 x_train = x_train.values.reshape(-1, 1)
 x_test = x_test.values.reshape(-1, 1)
 
 # Plot data points
 #plt.scatter(x_train, y_train)
-#plt.show()
+# plt.show()
 
 # Create empty linear regression model
 lr = LinearRegression()
